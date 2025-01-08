@@ -1,0 +1,548 @@
+:root {
+    --mainColor: #252734;
+    --secondaryColor: #333646;
+    --ascentColor: #FF9100;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    transform-origin: top left;
+    background-color: var(--mainColor) !important;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    position: fixed !important;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    background-color: var(--mainColor);
+    transition: transform 0.3s ease-in-out;
+    z-index: 10001;
+    border-bottom: 1px solid white;
+}
+
+.navbar-nav .nav-link {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#navbar.visible {
+    transform: translateY(100px);
+}
+
+#hover-area {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    background-color: transparent; 
+    z-index: 10000;
+    margin-bottom: 100px; 
+}
+
+#navbar.hidden {
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+#section1 {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 25px;
+    color: white;
+    padding-top: 15px;
+    margin-bottom: 70px;
+}
+
+.ryan {
+    width: 60%;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--ascentColor);
+    display: block;
+    margin-left: 20px;
+}
+
+
+.color-ascent {
+    color: var(--ascentColor);
+}
+
+.a-color {
+    color:  blue;
+}
+
+.fs-auto {
+    font-size: 5vw;
+}
+
+#section1 h2 {
+    font-size: 2.5rem;
+}
+
+#sextion1 p {
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+.btn-custom1 {
+    background-color: var(--ascentColor) !important;
+    text-align: center !important;
+    color: #fff !important;
+    width: 250px !important;
+    height: 45px !important;
+    font-weight: 700 !important;
+    font-size: 1.2rem !important;
+    margin-top: 20px;
+}
+
+.btn-custom1:hover {
+    box-shadow: 0 0 5px rgba(255, 166, 0, .8) !important;
+    background-color: var(--ascentColor) !important;
+    color: black !important;
+    font-size: 1.2rem !important;
+    min-width: 150px !important;
+    height: 45px !important;
+}
+
+.profil-circle {
+    background-color: #FF9100;
+    width: 30vw;
+    height: 30vw;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--ascentColor);
+}
+
+.profil-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-top: 30%;
+}
+
+#section2 {
+    background-color: var(--secondaryColor);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 25px;
+    color: white;
+    padding-top: 15px;
+    width: auto;
+}
+
+.line {
+    width: 20%;  
+    height: 3px; 
+    background-color: var(--ascentColor);
+    margin: 20px auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+#section3 {
+    transform-origin: top left;
+    background-color: var(--mainColor) !important;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    height: 500px;
+    width: auto;
+    margin: 0;
+    padding: 0;
+}
+
+#section4 {
+    background-color: var(--secondaryColor);
+    font-family: 'Ubuntu', sans-serif;
+    width: auto;
+    height: 700px;
+    display: flex;
+    margin-top: 100px;
+}
+
+.img-fluid:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+
+p {
+    font-size: 16px;
+}
+
+@media (max-width: 768) {
+    p {
+        font-size: 12px;
+    }
+
+    #section1 {
+        margin-top: 100px; 
+    }
+
+    #navbar {
+        height: 60px;
+        font-size: 16px;
+        padding: 10px 15px;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 14px;
+        margin-right: 1px;
+    }
+
+    #section3 {
+        height: 350px;
+    }
+
+    #section4 {
+        height: 400px;
+    }
+
+    #bacot {
+        font-size: 13px !important;
+        margin-top: 10px !important; 
+    }
+
+    .ryan {
+        margin-left: 10px;
+    }
+}
+
+:root {
+    --mainColor: #252734;
+    --secondaryColor: #333646;
+    --ascentColor: #FF9100;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    transform-origin: top left;
+    background-color: var(--mainColor) !important;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    position: fixed !important;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    background-color: var(--mainColor);
+    transition: transform 0.3s ease-in-out;
+    z-index: 10001;
+    border-bottom: 1px solid white;
+}
+
+.navbar-nav .nav-link {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#navbar.visible {
+    transform: translateY(100px);
+}
+
+#hover-area {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    background-color: transparent; 
+    z-index: 10000;
+    margin-bottom: 100px; 
+}
+
+#navbar.hidden {
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+#section1 {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 25px;
+    color: white;
+    padding-top: 15px;
+    margin-bottom: 70px;
+}
+
+.carousel-item {
+    height: auto;
+}
+
+.card {
+    height: auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--secondaryColor) !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.color-ascent {
+    color: var(--ascentColor);
+}
+
+.a-color {
+    color:  blue;
+}
+
+.fs-auto {
+    font-size: 5vw;
+}
+
+#section1 h2 {
+    font-size: 2.5rem;
+}
+
+#sextion1 p {
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+.btn-custom1 {
+    background-color: var(--ascentColor) !important;
+    text-align: center !important;
+    color: #fff !important;
+    width: 150px !important;
+    height: 45px !important;
+    font-weight: 700 !important;
+    font-size: 1.2rem !important;
+    margin-top: 20px;
+}
+
+.btn-custom1:hover {
+    box-shadow: 0 0 5px rgba(255, 166, 0, .8) !important;
+    background-color: var(--ascentColor) !important;
+    color: black !important;
+    font-size: 1.2rem !important;
+    min-width: 150px !important;
+    height: 45px !important;
+}
+
+.profil-circle {
+    background-color: #FF9100;
+    width: 25vw;
+    height: 25vw;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--ascentColor);
+}
+
+.profil-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-top: 30%;
+}
+
+
+
+
+#section2 {
+    background-color: var(--secondaryColor);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 25px;
+    color: white;
+    padding-top: 15px;
+    width: auto;
+}
+
+.line {
+    width: 20%;  
+    height: 3px; 
+    background-color: var(--ascentColor);
+    margin: 20px auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+#section3 {
+    transform-origin: top left;
+    background-color: var(--secondaryColor) !important;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    height: 600px;
+    width: auto;
+    margin: 0;
+    padding: 0;
+}
+
+#section4 {
+    background-color: var(--mainColor);
+    font-family: 'Ubuntu', sans-serif;
+    width: auto;
+    height: 700px;
+    display: flex;
+    margin-top: 30px;
+}
+
+.aldadongo {
+    transform-origin: top left;
+    background-color: var(--secondaryColor) !important;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    height: 600px;
+    width: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.custom-modal-content {
+    background-color: var(--ascentColor);
+    color: var(--ascentColor);
+}
+
+.custom-modal-content .modal-header {
+    background-color: var(--mainColor);
+    color: white;
+}
+.custom-footer {
+    background-color: var(--secondaryColor); /* Ganti warna latar footer sesuai kebutuhan */
+    width: 100%; /* Lebar 100% */
+    padding: 20px 0; /* Jarak atas dan bawah untuk memberi ruang */
+}
+
+.custom-footer .pnup {
+    max-width: 100px; /* Ukuran maksimal gambar */
+    height: auto; /* Pertahankan rasio gambar */
+}
+
+.custom-footer p {
+    font-size: 14px; /* Ukuran teks responsif */
+    margin: 0; /* Hilangkan margin default */
+    color: white; /* Warna teks */
+}
+
+
+.modal-body {
+    background-color: var(--secondaryColor);
+    color: white;
+}
+
+.custom-modal-content .modal-footer {
+    background-color: var(--mainColor);
+    color: white;
+}
+
+.custom-modal-content .btn-secondary {
+    background-color: #FF6F00; 
+    border-color: #FF6F00;
+}
+
+.custom-modal .modal-dialog {
+    transform: translateY(100%);
+    transition: transform 0.5s ease;
+}
+
+.custom-modal.show .modal-dialog {
+    transform: translateY(0);
+}
+
+.img-fluid:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+
+p {
+    font-size: 16px;
+}
+
+.pnup {
+    width: 10%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.pnup:hover {
+    animation: flip 2s infinite;
+}
+
+.loka {
+    margin-top: auto;
+}
+
+@keyframes flip {
+    0% {
+        transform: scale(1) rotateY(0deg);
+    }
+    50% {
+        transform: scale(1.5) rotateY(180deg);
+    }
+    100% {
+        transform: scale(1) rotateY(360deg);
+    }
+}
+
+
+@media (max-width: 768px), (max-height: 500px) {
+    p {
+        font-size: 12px;
+    }
+
+    #section1 {
+        margin-top: 100px; 
+    }
+
+    #navbar {
+        height: 60px;
+        font-size: 16px;
+        padding: 10px 15px;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 14px;
+        margin-right: 1px;
+    }
+
+    #section3 {
+        height: auto;
+    }
+
+    #section4 {
+        height: auto;
+    }
+
+    #bacot {
+        font-size: 13px !important;
+        margin-top: 10px !important; 
+    }
+
+    .element-hover {
+        pointer-events: auto;
+    }
+
+    .pnup {
+        width: 8%;
+        height: auto;
+    }
+
+}
